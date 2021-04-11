@@ -2,7 +2,7 @@
 
 # numbers:
 1. prime numbers
-2. 
+2. perfect numbers
 3. Euclidean
 4. number systems conversion
 5. exponential
