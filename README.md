@@ -5,7 +5,7 @@
 2. perfect numbers
 3. Euclidean
 4. number systems conversion
-5. exponential
+5. exponentiation 
 6. Fibonacci
 7. sum of n numbers
 
