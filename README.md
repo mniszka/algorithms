@@ -7,10 +7,12 @@
 4. number systems conversion
 5. exponentiation 
 6. Fibonacci
-7. sum of n numbers
+7. prime factors
+8. sum of n numbers
 
 # sorting:
 1. bubblesort
+2. quicksort
 
 
 # 
