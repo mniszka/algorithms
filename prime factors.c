@@ -1,28 +1,27 @@
-//prime factors of a given number
-
 #include<iostream> 
 #include<cmath> 
 using namespace std; 
 
 int main() 
 { 
-
-int number; 
+int number, pierw, pom; 
 cout<<"Put a number: "; 
 cin>>number; 
+ 
 
-cout<<"Prime factors of number "<<number<<": "; 
+cout<<"prime factors: "; 
 
-int a=2; //2 is first prime number
+int k=2; //first prime number
 
- while(number>1 && a<=sqrt(number)) 
+
+ while(number>1&&k<=sqrt(number)) 
 { 
-while(number % a==0)  
+while(number%k==0)  
 { 
-cout<<a<<" "; 
-number/=a; 
+cout<<k<<" "; 
+number/=k; 
 } 
-++a; 
+k++; 
 } 
 
 if(number>1) cout<<number; 
