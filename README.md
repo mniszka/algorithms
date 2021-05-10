@@ -20,5 +20,6 @@
 1. anagram
 2. palindrom
 
-# ciphers:
+# methods of encryption:
 1. Caesar cipher
+2. transposition cipher
