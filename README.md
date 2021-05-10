@@ -13,8 +13,12 @@
 # sorting:
 1. bubblesort
 2. quicksort
+3. selection sort
 
 
-# 
+# text
 1. anagram
 2. palindrom
+
+#ciphers:
+1. Caesar cipher
