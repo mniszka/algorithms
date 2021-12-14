@@ -14,6 +14,7 @@
 1. bubblesort
 2. quicksort
 3. selection sort
+4. smallest and bigest number
 
 
 # text
