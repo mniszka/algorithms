@@ -3,11 +3,8 @@
 #include <iostream>
 using namespace std;
 
-int size;
-int *arr= new int[size];
-
 //sorting numbers-  bubble sort:
-void sort(){
+void sort(int arr[], int size){
 int a;
 for(int i=0; i<(size-1); i++){
   for(int i=0; i<(size-1); i++){
@@ -28,8 +25,10 @@ for(int i=0; i<(size-1); i++){
 }
 
 int main(){
+int size;
 cout<<"How many numbers? ";
 cin>>size;
+int *arr= new int[size];
 
 //get numbers:
 for(int i=0; i<size; i++){
@@ -44,7 +43,7 @@ for(int i=0; i<size; i++){
 }
 cout<<endl;
 
-sort();
+sort(arr, size);
 
 delete[] arr;
 
