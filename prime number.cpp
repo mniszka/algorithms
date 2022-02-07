@@ -4,28 +4,28 @@
 #include <math.h>
 using namespace std;
 
-bool prime (int n)
+bool primeNumber (int number)
 {
-        if (n<2)
+        if (number<2)
                 return false; //if the number is less than 2 it is not a prime number
                 
-        for (int i=2;i<=sqrt(n);i++) //or  i*i<=n
-                if(n%i==0)
+        for (int i=2;i<=sqrt(number);i++) //or  i*i<=n
+                if(number%i==0)
                         return false; 
         return true;
 }
 
 int main()
 {
-        int n;
+        int number;
         for(;;){
         cout<<"Put a number: ";
-        cin>>n;
+        cin>>number;
         
-        if(prime(n)) //or prime(n)==1
-                cout<<"the number "<<n<<" is a prime number"<<endl;
+        if(primeNumber(number)) //or prime(n)==1
+                cout<<"the number "<<number<<" is a prime number"<<endl;
         else
-                cout<<"the number "<<n<<" is an even number"<<endl;
+                cout<<"the number "<<number<<" is an even number"<<endl;
         
         
         }
