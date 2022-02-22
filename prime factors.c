@@ -1,30 +1,22 @@
-#include<iostream> 
-#include<cmath> 
-using namespace std; 
+#include <iostream>
+#include <math.h>
+using namespace std;
 
-int main() 
-{ 
-int number, pierw, pom; 
-cout<<"Put a number: "; 
-cin>>number; 
- 
+int main(){
 
-cout<<"prime factors: "; 
+  int n = 12;
+  int k= 2;
 
-int k=2; //first prime number
+  //factorize the number
+  while(n>1 && k<= sqrt(n)){
+    while(n%k ==0){
+      cout<<k<<", ";
+      n/=k;
+    }
+    ++k;
 
+  }
+  if(n>1) cout<<n;
 
- while(number>1&&k<=sqrt(number)) 
-{ 
-while(number%k==0)  
-{ 
-cout<<k<<" "; 
-number/=k; 
-} 
-k++; 
-} 
-
-if(number>1) cout<<number; 
-cout<<endl; 
-return 0; 
-} 
+return 0;
+}
