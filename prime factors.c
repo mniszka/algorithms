@@ -3,20 +3,16 @@
 using namespace std;
 
 int main(){
+int number = 12;
+int n=2;
+int finalNumber = sqrt(number);
 
-  int n = 12;
-  int k= 2;
-
-  //factorize the number
-  while(n>1 && k<= sqrt(n)){
-    while(n%k ==0){
-      cout<<k<<", ";
-      n/=k;
+  while(number>1 && n<finalNumber){
+    while(number%n==0){
+      cout<<n<<", ";
+      number/=n;
     }
-    ++k;
-
+    n+=1;
   }
-  if(n>1) cout<<n;
-
-return 0;
+  if(number>1) cout<<number; 
 }
