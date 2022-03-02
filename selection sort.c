@@ -4,17 +4,17 @@
 using namespace std;
 
 int main(){
-  int min; //the smallest number
+  int minNumber; 
   int numbers[5] = {4,2,7,5,3};
-  int n = sizeof(numbers)/sizeof(numbers[0]); //number of elements
+  int size = sizeof(numbers)/sizeof(numbers[0]); 
 
   
-  for(int i=0; i<n-1; i++){
-    min=i;
-    for(int j=i+1; j<n; j++)
-      if(numbers[j]<numbers[min])
-      min=j;
-      swap(numbers[i], numbers[min]);
+  for(int i=0; i<size-1; i++){
+    minNumber=i;
+    for(int j=i+1; j<size; j++)
+      if(numbers[j]<numbers[minNumber])
+      minNumber=j;
+      swap(numbers[i], numbers[minNumber]);
   
   }
   
